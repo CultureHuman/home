@@ -1,17 +1,14 @@
 import { Navigation } from "@/components/Navigation";
 import { EmailSignup } from "@/components/EmailSignup";
 import heroBackground from "@/assets/hero-background.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
-      <div 
-        className="min-h-screen bg-cover bg-center bg-fixed relative"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
+      <div className="min-h-screen bg-cover bg-center bg-fixed relative" style={{
+      backgroundImage: `url(${heroBackground})`
+    }}>
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/20"></div>
         
@@ -20,10 +17,10 @@ const Index = () => {
             
             {/* Left Content */}
             <div className="z-10 text-center lg:text-left">
-              <h1 className="font-cormorant text-4xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 leading-tight tracking-wide opacity-0 animate-fade-in-up [animation-delay:200ms]">
+              <h1 className="font-outfit text-lg mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white font-normal md:text-8xl">
                 Bringing Stories to Homes
               </h1>
-              <p className="font-outfit text-lg md:text-xl font-light text-foreground/90 mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms]">
+              <p className="font-outfit text-lg md:text-xl font-light mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white">
                 Crafting story-driven pieces with modern craftsmanship that transform homes into soulful sanctuaries. Each piece tells a unique narrative.
               </p>
             </div>
@@ -49,8 +46,6 @@ const Index = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
