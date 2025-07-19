@@ -8,35 +8,59 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 37 20% 95%;
+    --foreground: 155 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 37 20% 95%;
+    --card-foreground: 155 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 37 20% 95%;
+    --popover-foreground: 155 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 155 44% 31%;
+    --primary-foreground: 37 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 37 30% 88%;
+    --secondary-foreground: 155 44% 31%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 37 30% 88%;
+    --muted-foreground: 155 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 17 88% 61%;
+    --accent-foreground: 37 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 37 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 37 20% 85%;
+    --input: 37 20% 85%;
+    --ring: 155 44% 31%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* CultureHuman Brand Colors */
+    --brand-forest: 155 44% 31%;
+    --brand-forest-light: 155 44% 40%;
+    --brand-orange: 17 88% 61%;
+    --brand-cream: 37 30% 88%;
+    --brand-beige: 37 20% 95%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-forest)), hsl(var(--brand-forest-light)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-orange)), hsl(var(--accent)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsla(155, 44%, 31%, 0.1);
+    --shadow-premium: 0 10px 40px hsla(155, 44%, 31%, 0.15);
+    
+    /* Typography */
+    --font-heading: 'Cormorant SC', serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-accent: 'Lato', sans-serif;
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
