@@ -21,7 +21,7 @@ const Index = () => {
               
               {/* Left Content */}
               <header className="z-10 text-center lg:text-left">
-                <h1 className="font-outfit text-lg mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white font-normal md:text-8xl">
+                <h1 className="font-outfit text-4xl md:text-8xl mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white font-bold">
                   Bringing Stories to Homes
                 </h1>
                 <p className="font-outfit text-lg md:text-xl font-light mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white">
