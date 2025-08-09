@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CultureHuman - Bringing Stories to Homes</title>
+  <meta name="description" content="Crafting story-driven pieces with modern craftsmanship that transform homes into soulful sanctuaries. Each piece tells a unique narrative through handcrafted furniture and curated home decor.">
+  <meta name="keywords" content="handcrafted furniture, home decor, story-driven pieces, artisan furniture, interior design, modern craftsmanship, sustainable furniture, unique home accessories">
+  <meta name="author" content="CultureHuman">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="EN">
+  <meta name="revisit-after" content="1 days">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://culturehuman.com/">
+  <meta property="og:title" content="CultureHuman - Bringing Stories to Homes">
+  <meta property="og:description" content="Crafting story-driven pieces with modern craftsmanship that transform homes into soulful sanctuaries. Each piece tells a unique narrative through handcrafted furniture and curated home decor.">
+  <meta property="og:image" content="https://culturehuman.com/hero-background.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://culturehuman.com/">
+  <meta property="twitter:title" content="CultureHuman - Bringing Stories to Homes">
+  <meta property="twitter:description" content="Crafting story-driven pieces with modern craftsmanship that transform homes into soulful sanctuaries. Each piece tells a unique narrative through handcrafted furniture and curated home decor.">
+  <meta property="twitter:image" content="https://culturehuman.com/hero-background.jpg">
+
+  <!-- Theme colors -->
+  <meta name="theme-color" content="#3b654a">
+  <meta name="msapplication-TileColor" content="#3b654a">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://culturehuman.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CultureHuman",
+    "description": "Crafting story-driven pieces with modern craftsmanship that transform homes into soulful sanctuaries. Each piece tells a unique narrative through handcrafted furniture and curated home decor.",
+    "url": "https://culturehuman.com",
+    "logo": "https://culturehuman.com/logo.png",
+    "foundingDate": "2024",
+    "industry": "Furniture and Home Decor",
+    "slogan": "Bringing Stories to Homes",
+    "expertise": ["Handcrafted Furniture", "Home Decor", "Interior Design", "Artisan Craftsmanship"],
+    "offers": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Handcrafted Furniture and Home Decor",
+        "description": "Story-driven pieces with modern craftsmanship"
+      }
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "CultureHuman"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CultureHuman",
+    "description": "Bringing Stories to Homes - Handcrafted furniture and home decor",
+    "url": "https://culturehuman.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://culturehuman.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CultureHuman"
+    }
+  }
+  </script>
+
+  <style>
+    /* CSS Custom Properties / Design System */
+    :root {
+      --background: 37 20% 95%;
+      --foreground: 155 15% 15%;
+      --card: 37 20% 95%;
+      --card-foreground: 155 15% 15%;
+      --popover: 37 20% 95%;
+      --popover-foreground: 155 15% 15%;
+      --primary: 155 44% 31%;
+      --primary-foreground: 37 20% 98%;
+      --secondary: 37 30% 88%;
+      --secondary-foreground: 155 44% 31%;
+      --muted: 37 30% 88%;
+      --muted-foreground: 155 15% 45%;
+      --accent: 17 88% 61%;
+      --accent-foreground: 37 20% 98%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 37 20% 98%;
+      --border: 37 20% 85%;
+      --input: 37 20% 85%;
+      --ring: 155 44% 31%;
+      --radius: 0.75rem;
+      
+      /* CultureHuman Brand Colors */
+      --brand-forest: 155 44% 31%;
+      --brand-forest-light: 155 44% 40%;
+      --brand-orange: 17 88% 61%;
+      --brand-cream: 37 30% 88%;
+      --brand-beige: 37 20% 95%;
+      
+      /* Gradients */
+      --gradient-hero: linear-gradient(135deg, hsl(var(--brand-forest)), hsl(var(--brand-forest-light)));
+      --gradient-accent: linear-gradient(135deg, hsl(var(--brand-orange)), hsl(var(--accent)));
+      
+      /* Shadows */
+      --shadow-soft: 0 4px 20px hsla(155, 44%, 31%, 0.1);
+      --shadow-premium: 0 10px 40px hsla(155, 44%, 31%, 0.15);
+      
+      /* Typography */
+      --font-heading: 'Cormorant SC', serif;
+      --font-body: 'Outfit', sans-serif;
+      --font-accent: 'Lato', sans-serif;
+      
+      /* Transitions */
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    /* Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      line-height: 1.6;
+    }
+
+    .min-h-screen {
+      min-height: 100vh;
+    }
+
+    .h-screen {
+      height: 100vh;
+    }
+
+    .bg-cover {
+      background-size: cover;
+    }
+
+    .bg-center {
+      background-position: center;
+    }
+
+    .bg-fixed {
+      background-attachment: fixed;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .fixed {
+      position: fixed;
+    }
+
+    .inset-0 {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .top-0 {
+      top: 0;
+    }
+
+    .left-0 {
+      left: 0;
+    }
+
+    .right-0 {
+      right: 0;
+    }
+
+    .z-50 {
+      z-index: 50;
+    }
+
+    .z-10 {
+      z-index: 10;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .grid {
+      display: grid;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .max-w-7xl {
+      max-width: 80rem;
+    }
+
+    .max-w-4xl {
+      max-width: 56rem;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .py-6 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .px-8 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .pt-32 {
+      padding-top: 8rem;
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-6 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .p-8 {
+      padding: 2rem;
+    }
+
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+
+    .space-y-2 > * + * {
+      margin-top: 0.5rem;
+    }
+
+    .rounded-xl {
+      border-radius: 0.75rem;
+    }
+
+    .border {
+      border-width: 1px;
+      border-color: hsl(var(--border));
+    }
+
+    .bg-black\/20 {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .bg-brand-beige {
+      background-color: hsl(var(--brand-beige));
+    }
+
+    .bg-background\/95 {
+      background-color: hsl(var(--background) / 0.95);
+    }
+
+    .backdrop-blur-lg {
+      backdrop-filter: blur(1rem);
+    }
+
+    .backdrop-blur-xl {
+      backdrop-filter: blur(1.5rem);
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .text-brand-forest {
+      color: hsl(var(--brand-forest));
+    }
+
+    .text-brand-forest\/80 {
+      color: hsl(var(--brand-forest) / 0.8);
+    }
+
+    .text-muted-foreground {
+      color: hsl(var(--muted-foreground));
+    }
+
+    .text-primary-foreground {
+      color: hsl(var(--primary-foreground));
+    }
+
+    .font-outfit {
+      font-family: var(--font-body);
+    }
+
+    .font-cormorant {
+      font-family: var(--font-heading);
+    }
+
+    .font-lato {
+      font-family: var(--font-accent);
+    }
+
+    .text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+
+    .text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+    .text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+
+    .font-bold {
+      font-weight: 700;
+    }
+
+    .font-semibold {
+      font-weight: 600;
+    }
+
+    .font-medium {
+      font-weight: 500;
+    }
+
+    .font-light {
+      font-weight: 300;
+    }
+
+    .leading-relaxed {
+      line-height: 1.625;
+    }
+
+    .tracking-wider {
+      letter-spacing: 0.05em;
+    }
+
+    .tracking-wide {
+      letter-spacing: 0.025em;
+    }
+
+    .opacity-0 {
+      opacity: 0;
+    }
+
+    .transition-all {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .duration-500 {
+      transition-duration: 500ms;
+    }
+
+    .duration-300 {
+      transition-duration: 300ms;
+    }
+
+    .hover\:text-brand-orange:hover {
+      color: hsl(var(--brand-orange));
+    }
+
+    .hover\:text-brand-forest:hover {
+      color: hsl(var(--brand-forest));
+    }
+
+    .hover\:translate-x-1:hover {
+      transform: translateX(0.25rem);
+    }
+
+    .group:hover .group-hover\:opacity-100 {
+      opacity: 1;
+    }
+
+    .shadow-soft {
+      box-shadow: var(--shadow-soft);
+    }
+
+    .shadow-premium {
+      box-shadow: var(--shadow-premium);
+    }
+
+    @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out forwards;
+    }
+
+    .\[animation-delay\:400ms\] {
+      animation-delay: 400ms;
+    }
+
+    .\[animation-delay\:600ms\] {
+      animation-delay: 600ms;
+    }
+
+    /* Grid Layout */
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .gap-12 {
+      gap: 3rem;
+    }
+
+    .gap-24 {
+      gap: 6rem;
+    }
+
+    /* Form Styles */
+    .input-field {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid hsl(var(--border));
+      border-radius: calc(var(--radius) - 2px);
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      font-family: var(--font-body);
+      transition: border-color var(--transition-smooth);
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: hsl(var(--brand-forest));
+    }
+
+    .button {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background-color: hsl(var(--brand-forest));
+      color: hsl(var(--primary-foreground));
+      border: none;
+      border-radius: calc(var(--radius) - 2px);
+      font-family: var(--font-body);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+    }
+
+    .button:hover {
+      background-color: hsl(var(--brand-forest-light));
+      box-shadow: var(--shadow-soft);
+    }
+
+    .button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .label {
+      display: block;
+      font-family: var(--font-accent);
+      font-weight: 500;
+      color: hsl(var(--brand-forest));
+      margin-bottom: 0.5rem;
+    }
+
+    /* Navigation Styles */
+    .nav-scrolled {
+      background-color: hsl(var(--brand-beige) / 0.9);
+      backdrop-filter: blur(1rem);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-scrolled .nav-link {
+      color: hsl(var(--foreground));
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .nav-brand {
+      position: relative;
+    }
+
+    .nav-brand::before {
+      content: '';
+      position: absolute;
+      left: -1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.5rem;
+      height: 1px;
+      background-color: hsl(var(--brand-orange));
+      opacity: 0;
+      transition: opacity var(--transition-smooth);
+    }
+
+    .nav-brand:hover::before {
+      opacity: 1;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+      .md\:text-8xl {
+        font-size: 6rem;
+        line-height: 1;
+      }
+
+      .md\:text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      .md\:text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+
+      .md\:text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+
+      .md\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .lg\:gap-24 {
+        gap: 6rem;
+      }
+
+      .lg\:text-left {
+        text-align: left;
+      }
+    }
+
+    /* Hide elements by default for progressive enhancement */
+    .hidden {
+      display: none;
+    }
+
+    /* Aria hidden styles */
+    [aria-hidden="true"] {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="min-h-screen">
+    <!-- Navigation -->
+    <nav id="navigation" class="fixed top-0 left-0 right-0 z-50 py-6 flex justify-between items-center px-8 md:px-16 transition-all duration-500">
+      <a href="#" class="nav-link nav-brand font-cormorant text-2xl md:text-3xl font-semibold tracking-wider">
+        CultureHuman
+      </a>
+      
+      <a href="#about" class="nav-link font-outfit font-light text-lg tracking-wide">
+        About Us
+      </a>
+    </nav>
+    
+    <!-- Hero Section -->
+    <main role="main">
+      <section 
+        class="min-h-screen bg-cover bg-center bg-fixed relative" 
+        style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAoACgDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABQABAgMEBgf/xAAmEAACAQMDAwQDAQAAAAAAAAABAgMABBEFEiExQVEGEyJhcTKBkf/EABUBAQEAAAAAAAAAAAAAAAAAAAMB/8QAGhEAAwEBAQEAAAAAAAAAAAAAAAECAxESIf/aAAwDAQACEQMRAD8A6iltPh9k+oBF3AZAJ+QD8Vl1S2s7CPcqKzjOd3oaqjm9OXVjH+KKWyIJOSc4wKq1G4WNQhaMb++etctJ6jPktSSbJ6LqNzpVulvdQjAJ2Mhz5z1rReXst7t+CItX6w+gK2tG0u+t7K5mEBcuwDIFHIyD1Fa4dOttLjKwxBARlmOSR6/NNrfmN5jzEqhvgufGaWr3v2zaJqrjXbxhsGP3HKL6+9LSitHNyGlmfEAzHaoL88c1sksrUeT7CeobtnB4xirNK1JtBwSzNZnj38rVEt7c6vK8rEFWOBtyDXPG5l1vhWwKqGVZOgJ8+arluLqF1iVYh8/+qO50Y7hzpL6Fkm5jV8MoZODSlrSXU/e9vcTuMwjJAONpJq2DQdWuNqS29qVPcyYNaP//Z')"
+        aria-label="Hero section featuring handcrafted furniture and home decor"
+      >
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-black/20" aria-hidden="true"></div>
+        
+        <div class="relative min-h-screen pt-32 flex items-center justify-center px-4">
+          <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            
+            <!-- Left Content -->
+            <header class="z-10 text-center lg:text-left">
+              <h1 class="font-outfit text-4xl md:text-8xl mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white font-bold">
+                Bringing Stories to Homes
+              </h1>
+              <p class="font-outfit text-lg md:text-xl font-light mb-8 leading-relaxed opacity-0 animate-fade-in-up [animation-delay:400ms] text-white">
+                Crafting story-driven pieces with modern craftsmanship that transform homes into soulful sanctuaries. Each piece tells a unique narrative through handcrafted furniture and curated home decor.
+              </p>
+            </header>
+
+            <!-- Right Content - Email Signup -->
+            <aside class="z-10 opacity-0 animate-fade-in-up [animation-delay:600ms]" aria-label="Newsletter signup">
+              <div class="bg-background/95 backdrop-blur-xl border border rounded-xl p-8 shadow-premium">
+                <div class="text-center mb-6">
+                  <h2 class="font-cormorant text-2xl md:text-3xl font-semibold text-brand-forest mb-2">
+                    Join The Waiting List
+                  </h2>
+                  <p class="font-lato text-sm text-muted-foreground">
+                    Be among the first to discover our exclusive story-driven pieces and receive insider access to our curated collections
+                  </p>
+                </div>
+
+                <form id="emailForm" class="space-y-4">
+                  <div class="space-y-2">
+                    <label for="email" class="label">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="your@email.com"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  
+                  <button type="submit" class="button">
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </aside>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section 
+        id="about" 
+        class="h-screen bg-brand-beige flex items-center justify-center"
+        aria-label="About CultureHuman"
+      >
+        <div class="text-center max-w-4xl px-4">
+          <h2 class="font-cormorant text-4xl md:text-5xl font-semibold text-brand-forest mb-6">
+            About CultureHuman
+          </h2>
+          <p class="font-outfit text-lg md:text-xl text-brand-forest/80 leading-relaxed">
+            We believe every home should tell a story. Our curated collection of handcrafted furniture and decor pieces 
+            are carefully selected and crafted to bring meaning, warmth, and personality to your living spaces. 
+            From artisan-made furniture to unique decorative elements, each item is chosen for its ability to 
+            create authentic, story-driven environments that reflect your personal narrative.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Navigation scroll effect
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('navigation');
+      const isScrolled = window.scrollY > 50;
+      
+      if (isScrolled) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+
+    // Email form submission
+    document.getElementById('emailForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      
+      if (!email || !email.includes('@')) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Simulate form submission
+      const button = this.querySelector('button');
+      const originalText = button.textContent;
+      
+      button.textContent = 'Joining...';
+      button.disabled = true;
+      
+      setTimeout(() => {
+        alert('Welcome to the waiting list! You\'ll be the first to know about our collections drop.');
+        document.getElementById('email').value = '';
+        button.textContent = originalText;
+        button.disabled = false;
+      }, 1500);
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
